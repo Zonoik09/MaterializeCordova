@@ -9,7 +9,9 @@ function onDeviceReady() {
 (function($){
     $(function(){
   
-        $('.tabs').tabs({"swipeable":true});
+        var options = { "swipeable": true };
+        var el = document.getElementsByClassName('tabs');
+        var instance = M.Tabs.init(el, options);
   
     }); // end of document ready
   })(jQuery); // end of jQuery name space
