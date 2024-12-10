@@ -16,3 +16,12 @@ function onDeviceReady() {
     }); // end of document ready
   })(jQuery); // end of jQuery name space
   
+  document.addEventListener('DOMContentLoaded', function() {
+    // Inicializar sidenav
+    var sidenavElems = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(sidenavElems);
+
+    // Inicializar tabs (opcional, si usas las tabs en tu código)
+    var tabsElems = document.querySelectorAll('.tabs');
+    M.Tabs.init(tabsElems);
+});
